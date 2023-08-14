@@ -1,0 +1,71 @@
+:root {
+  --clr-primary-cyan: hsl(193, 38%, 86%);
+  --clr-primary-neongreen: hsl(150, 100%, 66%);
+  --clr-neutral-grayblue: hsl(217, 19%, 38%);
+  --clr-neutral-dark-grayblue: hsl(217, 19%, 24%);
+}
+
+main {
+  position: relative;
+  background-color: var(--clr-neutral-dark-grayblue);
+  text-align: center;
+  padding: 3rem 1.75rem;
+  margin-bottom: 2rem;
+  max-width: 21.4rem;
+  border-radius: 1rem;
+  box-shadow: 24px 32px 64px -8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  color: var(--clr-primary-cyan);
+  font-size: 1.45rem;
+  margin: 1.5rem 0 2.5rem 0;
+}
+
+p {
+  margin: 0;
+  letter-spacing: 4px;
+  font-size: 0.65rem;
+  color: var(--clr-primary-neongreen);
+  text-transform: uppercase;
+}
+
+img {
+  max-width: 100%;
+  margin: 0 auto 1.5rem auto;
+}
+
+button {
+  position: absolute;
+  bottom: -2rem;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 4rem;
+  height: 4rem;
+  border: none;
+  border-radius: 50%;
+  background: center var(--clr-primary-neongreen) url("./assets/icon-dice.svg")
+    no-repeat;
+  cursor: pointer;
+}
+
+button:hover {
+  transition: box-shadow 0.1s ease-out;
+  box-shadow: 0px 0px 32px var(--clr-primary-neongreen);
+}
+
+@media all and (min-width: 768px) {
+  main {
+    max-width: none;
+    width: 33.75rem;
+  }
+
+  h1 {
+    font-size: 1.78rem;
+  }
+
+  p {
+    font-size: 0.85rem;
+  }
+}
