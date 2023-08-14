@@ -10,7 +10,7 @@ function App() {
 
   async function fetchSlip() {
     try {
-      const response = await fetch("https://api.adviceslip.com/advice/71");
+      const response = await fetch("https://api.adviceslip.com/advice");
       const data = await response.json();
       setSlip(data.slip);
     } catch (error) {
